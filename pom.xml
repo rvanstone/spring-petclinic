@@ -40,7 +40,7 @@
 
 		<cobertura.version>2.7</cobertura.version>
 		
-		<mysql.version>5.7.14</mysql.version>
+		<mysql.version>5.1.39</mysql.version>
 
 	</properties>
 
