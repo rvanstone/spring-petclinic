@@ -39,6 +39,8 @@
 		<dandelion.version>1.0.1</dandelion.version>
 
 		<cobertura.version>2.7</cobertura.version>
+		
+		<mysql.version>5.7.14</mysql.version>
 
 	</properties>
 
@@ -182,14 +184,20 @@
 		</dependency>
 
 		<!-- Databases - Uses HSQL by default -->
+		<!--
 		<dependency>
 			<groupId>org.hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-
+		-->
 		<!-- For MySql only -->
-		<!-- <dependency> <groupId>mysql</groupId> <artifactId>mysql-connector-java</artifactId> </dependency> -->
+		<dependency> 
+			<groupId>mysql</groupId> 
+			<artifactId>mysql-connector-java</artifactId> 
+			<version>${mysql.version}</version>
+		</dependency>
+		
 		<!-- HIBERNATE -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
